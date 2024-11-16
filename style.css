@@ -1,0 +1,98 @@
+/*I dont know how to use css, I got help from AI*/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #f0f2f5, #cfd9df);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333333;;;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  #dataForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  #dataInput, #algorithmSelect, #targetInput, button[type="submit"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  #dataInput:focus, #algorithmSelect:focus, #targetInput:focus, button[type="submit"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+  }
+  
+  button[type="submit"] {
+    background-color: #1eff00;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #00b336;
+  }
+  
+  #visualization {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  #visualization div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  #visualization div.green {
+    background-color: #28a745;
+    color: #ffffff;
+  }
+  
+  #visualization div.red {
+    background-color: #dc3545;
+    color: #ffffff;
+  }
+  
+  .alert-danger {
+    color: #dc3545;
+    font-weight: bold;
+  }
+  
+  .arrow {
+    display: inline-block;
+    margin-right: 5px;
+    color: #007bff;
+  }
+  
