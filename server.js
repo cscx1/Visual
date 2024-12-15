@@ -5,10 +5,10 @@ const bodyParser = require('body-parser');
 const app = express();
 const PORT = process.env.PORT || 4000;
 
-app.use(express.static('public'));
+app.use(express.static('public')); 
 
 app.use(bodyParser.text());
-
+//
 //bubble Sort Visualization Endpoint
 app.post('/visualize_bubble_sort', (req, res) => {
     console.log("Bubble Sort Request:", req.body); // debugging statement
